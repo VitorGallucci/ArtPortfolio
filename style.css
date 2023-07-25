@@ -1,0 +1,239 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: lightblue;
+    background-image: url('blue-snowflake-simple-hand-drawn-seamless-pattern-new-year-christmas-texture-winter-snow-frozen-ice-crystal-xmas-frost-symbol-vector.jpg');
+  }
+  
+/* Header Styles */
+  header {
+    background-color: black;
+    color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0
+}  
+h1 a:hover {
+  color: #f0f0f0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin: 0 1rem;
+  font-size: large;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #f0f0f0;
+}
+
+/* Header Content */
+.header-content {
+    max-width: 700px;
+    font-weight: bolder;
+}
+    
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: black;
+}
+
+    button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+    
+    button:hover {
+    background-color: #fff;
+    color: black;
+    }
+    
+    /* About Section Styles */
+    .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    height: 600px;
+    background-color: black;
+    color: lightblue;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 66%, 80% 90%, 50% 99%, 20% 90%, 0% 65%);
+    margin-bottom: 35px;
+    text-align: center;
+    }
+    
+    .about-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    }
+    
+    .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    .about-content p {
+    font-size: 1.2rem;
+    }
+    
+    /* Gallery Section Styles */
+    #gallery {
+    background-color: lightblue;
+    padding: 40px;
+    }
+    
+    #gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-gap: 20px;
+        margin-top: 40px;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .gallery-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: center;
+    }
+    
+    .gallery-grid img:hover {
+    transform: scale(1.1);
+    }
+    
+    .gallery-grid::before {
+      content: '';
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 1;
+    }
+
+    /* Contact Section Styles */
+    .contact-content {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 40px;
+    text-align: center;
+    background-color: black;
+    border-radius: 35px;
+    }
+    
+    .contact-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: lightblue;
+    }
+    
+    .contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    }
+    
+    .contact-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    }
+    
+    .contact-content form input, .contact-content form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    }
+    
+    .contact-content form textarea {
+    height: 150px;
+    }
+    
+    .contact-content form button {
+    background-color: black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    }
+    
+    .contact-content form button:hover {
+      background-color: #fff;
+      color: black;
+    }
+    
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .header-content {
+    text-align: center;
+    margin: 0 auto;
+    }
+    
+    .about-content, .contact-content {
+    padding: 20px;
+    }
+    
+    .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
